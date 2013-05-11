@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  <property>
+    <name>http.agent.name</name>
+    <value>Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:20.0) Gecko/20100101 Firefox/20.0</value>
+  </property>
+  
+  <property>
+    <name>urlfilter.baidu.file</name>
+    <value>baidu-urlfilter.txt</value>
+    <description>This file will be used by BaiduURLFilter </description>
+  </property>
+  
+  <property>
+    <name>d51cto.url</name>
+    <value>http://database.51cto.com</value>
+  </property>
+  
+  <property>
+    <name>d51cto.content.class</name>
+    <value>content</value>
+  </property>
+  
+  <property>
+    <name>storage.webpage.url</name>
+    <value>http://solr.free4lab.com/addWebPage</value>
+  </property>
+    
+  <property>
+    <name>plugin.includes</name>
+    <value>protocol-http|urlfilter-(regex|baidu)|parse-(html|tika|d51cto)|index-(basic|anchor)|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
+    <description>Regular expression naming plugin directory names to
+    include.  Any plugin not matching this expression is excluded.
+    In any case you need at least include the nutch-extensionpoints plugin. By
+    default Nutch includes crawling just HTML and plain text via HTTP,
+    and basic indexing and search plugins. In order to use HTTPS please enable 
+    protocol-httpclient, but be aware of possible intermittent problems with the 
+    underlying commons-httpclient library.
+    </description>
+  </property>
+  
+  <property>
+    <name>http.redirect.max</name>
+    <value>3</value>
+    <description>The maximum number of redirects the fetcher will follow when
+    trying to fetch a page. If set to negative or 0, fetcher won't immediately
+    follow redirected URLs, instead it will record them for later fetching.
+    </description>
+  </property>
+  
+</configuration>
