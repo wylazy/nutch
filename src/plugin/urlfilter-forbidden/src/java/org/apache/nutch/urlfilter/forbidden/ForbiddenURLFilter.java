@@ -49,7 +49,7 @@ import java.net.MalformedURLException;
  */
 public class ForbiddenURLFilter implements URLFilter {
 
-	private static final Logger LOG = LoggerFactory.getLogger(ForbiddenURLFilterTest.class);
+	private static final Logger LOG = LoggerFactory.getLogger(ForbiddenURLFilter.class);
 
 	private List<String> forbids;
 	private Configuration conf;
