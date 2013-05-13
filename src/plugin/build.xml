@@ -69,7 +69,7 @@
      <ant dir="urlnormalizer-pass" target="deploy"/>
      <ant dir="urlnormalizer-regex" target="deploy"/>
   	 <ant dir="urlfilter-forbidden" target="deploy"/>
-  	 <ant dir="parse-d51cto" target="deploy"/>
+  	 <ant dir="parse-content" target="deploy"/>
   </target>
 
   <!-- ====================================================== -->
@@ -154,6 +154,6 @@
     <ant dir="urlnormalizer-pass" target="clean"/>
     <ant dir="urlnormalizer-regex" target="clean"/>
   	<ant dir="urlfilter-forbidden" target="clean"/>
-  	<ant dir="parse-d51cto" target="clean"/>
+  	<ant dir="parse-content" target="clean"/>
   </target>
 </project>

@@ -16,12 +16,12 @@
   </property>
   
   <property>
-    <name>d51cto.url</name>
+    <name>parse.content.url</name>
     <value>http://database.51cto.com</value>
   </property>
   
   <property>
-    <name>d51cto.content.class</name>
+    <name>parse.content.class</name>
     <value>content</value>
   </property>
   
@@ -32,7 +32,7 @@
     
   <property>
     <name>plugin.includes</name>
-    <value>protocol-http|urlfilter-(regex|forbidden)|parse-(html|tika|d51cto)|index-(basic|anchor)|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
+    <value>protocol-http|urlfilter-(regex|forbidden)|parse-(html|tika|content)|index-(basic|anchor)|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
     <description>Regular expression naming plugin directory names to
     include.  Any plugin not matching this expression is excluded.
     In any case you need at least include the nutch-extensionpoints plugin. By
