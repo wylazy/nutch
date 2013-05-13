@@ -10,9 +10,9 @@
   </property>
   
   <property>
-    <name>urlfilter.baidu.file</name>
-    <value>baidu-urlfilter.txt</value>
-    <description>This file will be used by BaiduURLFilter </description>
+    <name>urlfilter.forbidden.file</name>
+    <value>forbidden-urlfilter.txt</value>
+    <description>This file will be used by ForbiddenURLFilter </description>
   </property>
   
   <property>
@@ -32,7 +32,7 @@
     
   <property>
     <name>plugin.includes</name>
-    <value>protocol-http|urlfilter-(regex|baidu)|parse-(html|tika|d51cto)|index-(basic|anchor)|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
+    <value>protocol-http|urlfilter-(regex|forbidden)|parse-(html|tika|d51cto)|index-(basic|anchor)|scoring-opic|urlnormalizer-(pass|regex|basic)</value>
     <description>Regular expression naming plugin directory names to
     include.  Any plugin not matching this expression is excluded.
     In any case you need at least include the nutch-extensionpoints plugin. By

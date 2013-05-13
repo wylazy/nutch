@@ -68,7 +68,7 @@
      <ant dir="urlnormalizer-host" target="deploy"/>
      <ant dir="urlnormalizer-pass" target="deploy"/>
      <ant dir="urlnormalizer-regex" target="deploy"/>
-  	 <ant dir="urlfilter-baidu" target="deploy"/>
+  	 <ant dir="urlfilter-forbidden" target="deploy"/>
   	 <ant dir="parse-d51cto" target="deploy"/>
   </target>
 
@@ -101,7 +101,7 @@
      <ant dir="urlnormalizer-host" target="test"/>
      <ant dir="urlnormalizer-pass" target="test"/>
      <ant dir="urlnormalizer-regex" target="test"/>
-     <ant dir="urlfilter-baidu" target="test"/>
+     <ant dir="urlfilter-forbidden" target="test"/>
     </parallel>
   </target>
 
@@ -153,7 +153,7 @@
     <ant dir="urlnormalizer-basic" target="clean"/>
     <ant dir="urlnormalizer-pass" target="clean"/>
     <ant dir="urlnormalizer-regex" target="clean"/>
-  	<ant dir="urlfilter-baidu" target="clean"/>
+  	<ant dir="urlfilter-forbidden" target="clean"/>
   	<ant dir="parse-d51cto" target="clean"/>
   </target>
 </project>
